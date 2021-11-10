@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cyber Bakery</title>
-    <meta name="description" content="Demo for the tutorial on how to build a 3d model color customizer app with Three.js." />
-    <meta name="keywords" content="three.js, color customizer, app, tutorial, 3d model, blender, javascript" />
-    <meta name="author" content="Kyle Wetton for Codrops" />
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/nwj1yzx.css">
@@ -41,9 +38,9 @@
             <div class="types">
             <p class="item"><input type="radio" name="type" value="cake_solid.glb" onclick="checkedSolid()"  id="solid"><label for="solid"></label>Solid</p>
             <p class="item"><input type="radio" name="type" value="cake_palette.glb" onclick="checkedPalette()" id="palette" checked><label for="palette"></label>Palette</p>
-            <p class="item"><input type="radio" name="type" value="garden" id="garden"><label for="garden"></label>Garden</p>
-            <p class="item"><input type="radio" name="type" value="scenery" id="scenery"><label for="scenery"></label>Scenery</p>
-            <p class="item"><input type="radio" name="type" value="painting" id="painting"><label for="painting"></label>Painting</p>
+            <p class="item"><input type="radio" name="type" value="garden" onclick="checkedSolid()" id="garden"><label for="garden"></label>Garden</p>
+            <p class="item"><input type="radio" name="type" value="scenery" onclick="checkedSolid()" id="scenery"><label for="scenery"></label>Scenery</p>
+            <p class="item"><input type="radio" name="type" value="painting" onclick="checkedSolid()" id="painting"><label for="painting"></label>Painting</p>
             </div>
         </div>
         <p class="sub-title">Design</p>        
