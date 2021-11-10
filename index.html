@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber Bakery</title>
+    <meta name="description" content="Demo for the tutorial on how to build a 3d model color customizer app with Three.js." />
+    <meta name="keywords" content="three.js, color customizer, app, tutorial, 3d model, blender, javascript" />
+    <meta name="author" content="Kyle Wetton for Codrops" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/nwj1yzx.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="headerbox1">
+        <div class="title-container">
+        <img src="title.png">
+        </div>
+    </div>
+        <div class="headerbox2">
+            <div class="headerbox3"></div>
+            <div class="headerbox3"></div>
+        </div>
+        <div class="headerbox4">
+            <div class="headerbox5"></div>
+        </div>
+    </header>
+    <section>
+        <canvas id="c"></canvas>
+        <div class="half"></div>
+        <div class="half">
+        <div class="form-container">
+        <p class="form-title">Order Form</p>
+        <div class="type-container">
+            <p class="sub-title">Type</p>
+            <div class="types">
+            <p class="item"><input type="radio" name="type" value="cake_solid.glb" onclick="checkedSolid()"  id="solid"><label for="solid"></label>Solid</p>
+            <p class="item"><input type="radio" name="type" value="cake_palette.glb" onclick="checkedPalette()" id="palette" checked><label for="palette"></label>Palette</p>
+            <p class="item"><input type="radio" name="type" value="garden" id="garden"><label for="garden"></label>Garden</p>
+            <p class="item"><input type="radio" name="type" value="scenery" id="scenery"><label for="scenery"></label>Scenery</p>
+            <p class="item"><input type="radio" name="type" value="painting" id="painting"><label for="painting"></label>Painting</p>
+            </div>
+        </div>
+        <p class="sub-title">Design</p>        
+        <div class="solid-control">
+            <p class="coloritem">
+            <label for="cBase">Base</label>
+            <input type="color" id="cBase" value="#f1f1f1" oninput="selectBaseColor(this.value)">
+            </p>
+            <p class="coloritem" id="palettecolor1">
+                <label for="cColor1">Palette1</label>
+                <input type="color" id="cColor1" value="#f1f1f1"oninput="selectColor1Color(this.value)">
+                </p>
+            <p class="coloritem" id="palettecolor2">
+                <label for="cColor2">Palette2</label>
+                <input type="color" id="cColor2" value="#f1f1f1"oninput="selectColor2Color(this.value)">
+                </p>
+            <p class="coloritem">
+            <label for="cTop">Top</label>
+            <input type="color" id="cTop" value="#f1f1f1" oninput="selectTopColor(this.value)">
+            </p>
+            <p class="coloritem">
+            <label for="cSide">Side</label>
+            <input type="color" id="cSide" value="#f1f1f1"oninput="selectSideColor(this.value)">
+            </p>
+            <p class="coloritem">
+            <label for="cBottom">Bottom</label>
+            <input type="color" id="cBottom" value="#f1f1f1"oninput="selectBottomColor(this.value)">
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
+    </section>
+    
+    <script src='https://unpkg.com/three@0.127.0/build/three.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+    <script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
